@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <h1 class="titulo">GerTasks</h1>
+        </div>
+
+    </header>
+
+    <div class="main">
+
+        <div class="titulo-checklist">
+            <h1>
+                TasksList
+            </h1>
+            <div class="input-pesquisa-container">
+                <input type="text" class="input-pesquisa" id="pesquisa" placeholder="digite o id para filtrar tarefas">
+                <button class="pesquisar"><img src="imgs/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
+                <p>Digite um valor válido</p>
+            </div>
+                    </div>
+
+        <section class="container-todas-tarefas">
+
+            <div class="carregando"></div>
+            
+            <div class="container-tarefas">
+                
+            </div>
+
+        </section>
+
+        <dialog class="editar-modal-container">
+            <div class="editar-modal">
+                <h2>Editar</h2>
+                <div class="input-edit-container">
+                    <label for="titulo">Título</label>
+                    <input type="text" name="" id="titulo" class="titulo-editar">
+                    <label for="descricao">Descrição</label>
+                    <input type="text" name="" id="descricao" class="descricao-editar">
+                </div>
+                <div class="opcoes-modal">
+                <img src="" alt=""> 
+                <button class="atualizar">Salvar</button>
+                <button class="cancelar-editcao">Cancelar</button>
+
+                </div>            
+            </div>
+        </dialog>
+
+    </div>
+    
+    <section class="container-adicionar">
+
+        <div class="dados-adicionar">
+            <input type="text" name="" placeholder="digite o título" id="titulo" class="input-add">
+            <input type="text" name="" placeholder="digite a descrição" id="descricao" class="input-add">
+        </div>
+
+        <button class="adicionar">
+            <spam class="texto-add">Adicionar</spam>                <div class="carregando-nova"></div>
+        </button>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

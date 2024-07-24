@@ -1,0 +1,329 @@
+
+        
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.tarefa {
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 10px;
+    height: 100px;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.tarefa img {
+    width: 100%;
+}
+
+.tarefa h1 {
+    margin-bottom: 10px;
+}
+
+.completa {
+    background-color: lime;
+    padding: 10px;
+    border-radius: 10px;
+    margin-inline: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.deletar {
+    background-color: rgb(255, 38, 38);
+    padding: 10px;
+    border-radius: 10px;
+    margin-inline: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.editar {
+    background-color: rgb(38, 161, 255);
+    padding: 10px;
+    border-radius: 10px;
+    margin-inline: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    background-color: rgb(251, 23, 23);
+    width: 100%;
+}
+
+.perfil {
+    border-radius: 100px;
+    background-color: white;
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+}
+
+.titulo {
+    color: white;
+}
+
+.input-pesquisa-container {
+    position: relative;
+    display: flex;
+}
+
+.input-pesquisa-container p {
+    display: none;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 3px;
+}
+
+.input-pesquisa-container-erro p {
+    display: block;
+}
+.input-pesquisa-container img{
+    width: 30px;
+}
+.input-pesquisa-container input {
+    padding: 12px;
+    border-radius: 10px 0 0 10px;
+}
+
+.input-pesquisa-container input:focus {
+    border: none;
+    outline: none;
+}
+.input-pesquisa-container button {
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+    padding: 3px;
+}
+
+.img-chack {
+    width: 60px;
+}
+.opcoes-modal{
+    margin: auto;
+}
+.atualizar {
+    background-color: rgb(81, 230, 81);
+    padding: 12px 20px;
+    color: white;
+    border-radius: 20px;
+    margin: 10px 20px;
+}
+
+.cancelar-editcao {
+    background-color: rgb(197, 17, 17);
+    padding: 12px 20px;
+    color: white;
+    border-radius: 20px;
+    margin: 10px 20px
+}
+.dadosTodo  h2{
+    font-size: 20px;
+}
+
+.editar-modal-container::backdrop {
+    background-color: hsla(0, 0%, 0%, 0.5);
+    animation: fadeIn .5s;
+}
+
+.main {
+    border: 1px solid #000;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 100%;
+    margin: 10px 10%;
+}
+
+.titulo-checklist {
+    background-color: rgb(251, 23, 23);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 10px;
+}
+
+.titulo-checklist h1 {
+    color: white;
+    padding: 20px;
+}
+
+.container-adicionar {
+    border-top: #da5050 solid 2px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    
+}
+
+
+.dados-adicionar {
+    display: flex;
+    flex: 1;
+    margin-right: 5px;
+}
+
+#titulo {
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+}
+
+#descricao {
+    padding: 15px;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.input-add:focus {
+    border: none;
+    outline: none;
+}
+
+.container-todas-tarefas {
+    overflow-y: scroll;
+    position: relative;
+    
+}
+
+.editar-modal-container {
+    margin: auto;
+    max-width: 400px;
+    border: black solid ;
+}
+
+.editar-modal {
+    display: flex;
+    flex-direction: column;
+}
+.editar-modal div input{
+
+}
+
+
+.editar-modal h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.text-editar {
+    background-color: #ccc;
+    font-size: 1.1rem;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+
+}
+
+.input-edit-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0px 20px;
+
+
+}
+
+.input-edit-container input {
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+
+}
+
+.input-edit-container input:focus {
+    background-color: #f4f4f4;
+
+}
+
+.adicionar {
+    background-color: rgb(251, 23, 23);
+    border-radius: 5px;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.tarefa > p{
+
+}
+
+
+.carregando {
+    border: 5px solid #b4b4b4;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+}
+
+.carregando-nova {
+    display: none;
+    border: 5px solid #b4b4b4;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.userId{
+    margin-left: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.del-tarefa{
+    display: flex;
+    align-items: center;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
